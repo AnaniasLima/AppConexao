@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        ScreenLog.add(LogType.TO_LOG, "WWW Entrei na funcao onNewIntent")
+        ScreenLog.add(LogType.TO_LOG, "WWW Entrei na funcao onNewIntent action=${intent.action}")
 
         if (intent.action != null && intent.action == UsbManager.ACTION_USB_DEVICE_ATTACHED) {
             ScreenLog.add(LogType.TO_LOG, "WWW ACTION_USB_DEVICE_ATTACHED")
