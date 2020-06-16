@@ -5,8 +5,7 @@ import timber.log.Timber
 class CommunicationThread internal constructor(
     private val request: String,
     private val curEvent: Event
-)
-    : Thread() {
+) : Thread() {
 
 
     override fun run() {
